@@ -1,3 +1,7 @@
+"""
+This module contains a function for loading environment variables from a Firebase store.
+"""
+
 from dotenv import load_dotenv
 from os import getenv, environ
 from firebase_admin import credentials, firestore, initialize_app, delete_app
@@ -9,7 +13,9 @@ LOADED: bool = False
 
 def load_environment() -> None:
     """
-    Loads environment into machine from firebase store 
+    Loads environment variables into the app from a Firebase store.
+
+    :return: None
     """
     
     global LOADED
