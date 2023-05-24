@@ -1,7 +1,8 @@
+from os import environ
+
 from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
 
-from os import environ
 
 def get_db_url() -> str:
     """
