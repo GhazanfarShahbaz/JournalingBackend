@@ -6,4 +6,4 @@ class Image(Model):
     data = TextField()
     caption = CharField(max_length=255, default='')
     tags = JSONField(default=[])
-    journal_entries = ManyToManyField('models.JournalEntry', related_name='images')
+    journal_entries = ManyToManyField('models.JournalEntry', related_name='image_entries')
