@@ -1,3 +1,9 @@
+"""
+This module contains the definition of the `Revision` model.
+
+The `Revision` model represents a revision made to a journal entry. It has several fields that store information about the revision, including its content, author, mood, and weather. It also has several many-to-many relationships with other models, including `Location`, `Event`, and `Image`.
+"""
+
 from tortoise.models import Model
 from tortoise.fields import IntField, CharField, TextField, DatetimeField, JSONField, ForeignKeyField, ManyToManyField
 

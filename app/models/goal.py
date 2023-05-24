@@ -1,3 +1,9 @@
+"""
+This module contains the definition of the `Goal` model.
+
+The `Goal` model represents a goal that a user wants to achieve. It has several fields that store information about the goal, including its name, category, priority, start and target dates, current progress, and motivators. It also has several many-to-many relationships with other models, including `JournalEntry`, `Location`, and `Event`.
+
+"""
 from tortoise.fields import IntField, CharField, TextField, JSONField, BooleanField, DateField, FloatField
 from tortoise.models import Model
 

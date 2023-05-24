@@ -1,3 +1,9 @@
+"""
+This module contains the definition of the `JournalEntry` model.
+
+The `JournalEntry` model represents a journal entry written by a user. It has several fields that store information about the entry, including its title, content, author, mood, and weather. It also has several many-to-many relationships with other models, including `Goal`, `Location`, `Image`, and `Event`.
+"""
+
 from tortoise.models import Model
 from tortoise.fields import IntField , CharField, TextField, DatetimeField, DateField, JSONField, ForeignKeyField, ManyToManyField
 
