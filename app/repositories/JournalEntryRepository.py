@@ -1,5 +1,5 @@
 from typing import List
-from tortoise.query_utils import Q
+from tortoise.queryset import QuerySet
 from app.models import JournalEntry
 
 
